@@ -12,12 +12,6 @@ export class Booking extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Event, (event) => event.bookings)
-  evento: Event;
-
-  @ManyToOne(() => User, (user) => user.bookings)
-  user: User;
-
   @Column()
   precio: number;
 
@@ -29,4 +23,10 @@ export class Booking extends BaseEntity {
 
   @Column()
   gps: string;
+
+  @ManyToOne(() => Event, (event) => event.bookings)
+  evento: Event;
+
+  @ManyToOne(() => User, (user) => user.bookings)
+  user: User;
 }

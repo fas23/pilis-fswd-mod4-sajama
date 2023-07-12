@@ -1,5 +1,12 @@
-import { BaseEntity, Column, PrimaryGeneratedColumn, OneToMany } from "typeorm";
+import {
+  BaseEntity,
+  Column,
+  PrimaryGeneratedColumn,
+  OneToMany,
+  Entity,
+} from "typeorm";
 import { Booking } from "./Booking";
+@Entity()
 export class Event extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
