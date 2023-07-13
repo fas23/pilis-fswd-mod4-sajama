@@ -14,7 +14,7 @@ export class User extends BaseEntity {
   @Column()
   username: string;
 
-  @Column({ select: false })
+  @Column()
   password: string;
 
   @OneToMany(() => Booking, (booking) => booking.user)

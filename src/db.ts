@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-require("dotenv").config();
+//require("dotenv").config();
 import { User } from "./entity/User";
 import { Event } from "./entity/Event";
 import { Booking } from "./entity/Booking";

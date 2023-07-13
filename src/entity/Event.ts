@@ -24,7 +24,10 @@ export class Event extends BaseEntity {
   fechaHora: Date;
 
   @Column()
-  gps: string;
+  gpsLatitud: string;
+
+  @Column()
+  gpsLongitud: string;
 
   @Column()
   precio: number;
