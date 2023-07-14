@@ -5,12 +5,15 @@ import jwt from "jsonwebtoken";
 
 export const getUsers = async (req: Request, res: Response) => {
   try {
-    //const users = await User.find();
     const users = await User.find({
       relations: {
         bookings: true,
       },
     });
+
+    if (users.length == 0) {
+      return res.status(200).json({ message: "Has no Users" });
+    }
 
     return res.json(users);
   } catch (error) {

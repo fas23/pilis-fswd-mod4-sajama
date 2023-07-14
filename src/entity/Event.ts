@@ -35,6 +35,9 @@ export class Event extends BaseEntity {
   @Column()
   limite: number;
 
+  @Column({ default: 0 })
+  reserva: number;
+
   @Column()
   tipoEvento: string;
 

@@ -22,7 +22,13 @@ export class Booking extends BaseEntity {
   lugar: string;
 
   @Column()
-  gps: string;
+  gpsLatitud: string;
+
+  @Column()
+  gpsLongitud: string;
+
+  @Column()
+  ticket: number;
 
   @ManyToOne(() => Event, (event) => event.bookings)
   evento: Event;
