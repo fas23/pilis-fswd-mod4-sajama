@@ -54,9 +54,7 @@ export const createBooking = async (req: Request, res: Response) => {
       },
     });
     var reservation = event!.reserva + parseInt(ticket);
-    if (reservation > event!.limite) {
-      return res.json({ message: "Tickets sold out" });
-    } else {
+    if (event!.limite == 0 || reservation <= event!.limite) {
       const booking = new Booking();
       booking.precio = event!.precio;
       booking.fechaHora = event!.fechaHora;
@@ -72,6 +70,8 @@ export const createBooking = async (req: Request, res: Response) => {
       return res
         .status(200)
         .json({ message: "Booking successfully created", booking });
+    } else {
+      return res.json({ message: "Tickets sold out" });
     }
   } catch (error) {
     if (error instanceof Error) {
@@ -83,6 +83,21 @@ export const createBooking = async (req: Request, res: Response) => {
 export const deleteBooking = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
+    const booking = await Booking.findOne({
+      where: { id: parseInt(id) },
+      relations: {
+        evento: true,
+        user: true,
+      },
+    });
+
+    if (booking) {
+      await Event.update(
+        { id: booking!.evento.id },
+        { reserva: booking!.evento.reserva - booking!.ticket }
+      );
+    }
+
     const result = await Booking.delete({ id: parseInt(id) });
 
     if (result.affected === 0)

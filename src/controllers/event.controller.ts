@@ -80,6 +80,7 @@ export const updateEvent = async (req: Request, res: Response) => {
     gpsLongitud,
     precio,
     limite,
+    reserva,
     tipoEvento,
   } = req.body;
 
@@ -98,6 +99,7 @@ export const updateEvent = async (req: Request, res: Response) => {
         gpsLongitud,
         precio,
         limite,
+        reserva,
         tipoEvento,
       }
     );
