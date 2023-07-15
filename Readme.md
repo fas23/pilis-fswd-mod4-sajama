@@ -16,7 +16,8 @@ npm i typescript -D         npm install typeorm --save
 npx tsc --init              npm install reflect-metadata --save
 npm i ts-node-dev -D        npm install @types/node --save-dev
 npm i morgan cors           npm install mysql --save
-npm i @types/express
+npm i @types/express        npm i passport passport-local passport-jwt jsonwebtoken bcrypt
+npm i -D @types/passport @types/passport-local @types/passport-jwt @types/jsonwebtoken @types/bcrypt
 ```
 
 ## Comandos
