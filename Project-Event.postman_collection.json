@@ -34,7 +34,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/user/1",
+							"raw": "localhost:3000/api/user/4",
 							"host": [
 								"localhost"
 							],
@@ -42,7 +42,7 @@
 							"path": [
 								"api",
 								"user",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"fabian sajama\",\r\n    \"password\" : \"fasSajama\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Abel23\",\r\n    \"password\": \"$2b$10$U3nquQ8mLJIW2gurk39tmOOHDnfRe5SAMnz23uRq4hWhkuQbSRX1m\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -63,7 +63,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/user/1",
+							"raw": "localhost:3000/api/user/4",
 							"host": [
 								"localhost"
 							],
@@ -71,7 +71,7 @@
 							"path": [
 								"api",
 								"user",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"abel\",\r\n    \"password\": \"abel\"\r\n}",
+							"raw": "{\r\n    \"username\": \"jose\",\r\n    \"password\": \"jose\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -112,7 +112,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/user/1",
+							"raw": "localhost:3000/api/user/5",
 							"host": [
 								"localhost"
 							],
@@ -120,7 +120,7 @@
 							"path": [
 								"api",
 								"user",
-								"1"
+								"5"
 							]
 						}
 					},
@@ -177,7 +177,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\" : \"Ciro y los Persas\",\r\n    \"descripcion\" : \"Festival\",\r\n    \"lugar\" : \"Ciudad Cultural\",\r\n    \"fechaHora\" : \"2023-08-07 22:00:00\",\r\n    \"gpsLatitud\" : \"40.14528997427982\",\r\n    \"gpsLongitud\" : \"-2.9582043750000366\",\r\n    \"precio\" : 3500,\r\n    \"limite\" : 2,\r\n    \"tipoEvento\" : \"recital\"\r\n}",
+							"raw": "{\r\n    \"nombre\" : \"Fiesta Nacional Estudiantes\",\r\n    \"descripcion\" : \"Festival\",\r\n    \"lugar\" : \"Ciudad Cultural\",\r\n    \"fechaHora\" : \"2023-08-07 22:00:00\",\r\n    \"gpsLatitud\" : \"40.14528997427982\",\r\n    \"gpsLongitud\" : \"-2.9582043750000366\",\r\n    \"precio\" : 2500,\r\n    \"limite\" : 5,\r\n    \"tipoEvento\" : \"recital\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -204,7 +204,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/event/1",
+							"raw": "localhost:3000/api/event/3",
 							"host": [
 								"localhost"
 							],
@@ -212,7 +212,7 @@
 							"path": [
 								"api",
 								"event",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -225,7 +225,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\" : \"Ciro y los Persas\",\r\n    \"descripcion\" : \"Festival\",\r\n    \"lugar\" : \"Ciudad Cultural\",\r\n    \"fechaHora\" : \"2023-08-07 22:00:00\",\r\n    \"gpsLatitud\" : \"40.14528997427982\",\r\n    \"gpsLongitud\" : \"-2.9582043750000366\",\r\n    \"precio\" : 5500,\r\n    \"limite\" : 1,\r\n    \"tipoEvento\" : \"recital al aire libre\"\r\n}",
+							"raw": "{\r\n        \"nombre\": \"Fiesta Nacional Estudiantes\",\r\n        \"descripcion\": \"Festival\",\r\n        \"lugar\": \"Ciudad Cultural\",\r\n        \"fechaHora\": \"2023-08-08T01:00:00.000Z\",\r\n        \"gpsLatitud\": \"40.14528997427982\",\r\n        \"gpsLongitud\": \"-2.9582043750000366\",\r\n        \"precio\": 2500,\r\n        \"limite\": 4,\r\n        \"reserva\": 0,\r\n        \"tipoEvento\": \"recital estudiantil\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -233,7 +233,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/event/1",
+							"raw": "localhost:3000/api/event/3",
 							"host": [
 								"localhost"
 							],
@@ -241,7 +241,7 @@
 							"path": [
 								"api",
 								"event",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -269,7 +269,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"evento\" : 2,\r\n    \"user\" : 2,\r\n    \"ticket\": 1\r\n}",
+							"raw": "{\r\n    \"evento\" : 2,\r\n    \"user\" : 2,\r\n    \"ticket\": 5\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -335,7 +335,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/booking/1",
+							"raw": "localhost:3000/api/booking/3",
 							"host": [
 								"localhost"
 							],
@@ -343,7 +343,7 @@
 							"path": [
 								"api",
 								"booking",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -358,7 +358,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"abel\",\r\n    \"password\" : \"abel\"\r\n}",
+					"raw": "{\r\n    \"username\": \"jose\",\r\n    \"password\" : \"jose\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -386,7 +386,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Abel2301\",\r\n    \"password\" : \"abelSajama\"\r\n}",
+					"raw": "{\r\n    \"username\": \"jose\",\r\n    \"password\" : \"jose\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
