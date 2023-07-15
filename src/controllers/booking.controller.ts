@@ -23,6 +23,27 @@ export const getBookings = async (req: Request, res: Response) => {
   }
 };
 
+export const getBooking = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const booking = await Booking.findOne({
+      where: { id: parseInt(id) },
+      relations: {
+        evento: true,
+        user: true,
+      },
+    });
+
+    if (!booking) return res.status(404).json({ message: "Booking not found" });
+
+    return res.json(booking);
+  } catch (error) {
+    if (error instanceof Error) {
+      return res.status(500).json({ message: error.message });
+    }
+  }
+};
+
 export const createBooking = async (req: Request, res: Response) => {
   const { evento, user, ticket } = req.body;
 
